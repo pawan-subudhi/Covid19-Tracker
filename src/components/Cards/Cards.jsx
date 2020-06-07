@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 import styles from './Cards.module.css';
 
-const cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
+const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
     if(!confirmed){
         return 'Loading...';
     }
@@ -97,4 +97,4 @@ const cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
     )
 }
 
-export default cards;
+export default Cards;
